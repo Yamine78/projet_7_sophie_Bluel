@@ -1,0 +1,186 @@
+/* Reset CSS basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  les styles d'ecriture */
+.login-link { font-weight: 600; }        
+#login-section p a { font-weight: 500; } 
+footer nav ul li { font-weight: 300; }  
+nav li a { font-weight: 400; }           
+
+
+
+/* BODY */
+body {
+    max-width: 1140px;
+    margin: auto;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    background-color: #FFFEF8; /* Fond jaune clair pour login-page */
+    display: flex;      /* pour le footer */
+    flex-direction: column;  /* pour le footer*/
+    min-height: 100vh; /*  pour le footer*/
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+ h1 {
+    display: flex;
+    font-family: 'Syne', sans-serif;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 22px;
+    color: #B1663C;
+    margin-left: 150px;
+}
+
+
+h1 span {
+	font-family: 'Work Sans';
+    font-weight: 200; 
+	font-size:16px;
+	letter-spacing: 0.1em;
+    margin-top: 5px;
+}
+
+/* NAV */
+
+
+nav li img {
+width: 22px;
+height: 22px;
+} 
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+nav li a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;       
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+/* Login nav */
+.login-link {
+    font-weight: 600; /* Semi-bold */
+}
+
+/* NAV hover */
+nav li a:hover {
+    color: #B1663C;
+}
+
+/* MAIN - LOGIN SECTION */
+#login-section {
+    width: 400px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+#login-section h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #1D6154;
+    margin-bottom: 40px;
+}
+
+#login-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#login-section label {
+    font-family: 'Work Sans';
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+    align-self: flex-start;
+    margin-bottom: -15px;   /* espace entre les mots et les input */
+    margin-left: 10px;      /* décale légèrement le label à droite */
+}
+
+#login-section label + input {
+    margin-bottom: 20px;   /* espace sous chaque input */
+}
+
+#login-section input[type="email"],
+#login-section input[type="password"] {
+    width: 100%;
+    max-width: 379px;
+    height: 51px;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+    background-color: #fff;
+   
+}
+
+#login-section button {
+    width: 180px;
+    height: 36px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    background-color: #1D6154;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#login-section button:hover {
+    background-color: #B1663C;
+}
+
+#login-section p a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    text-decoration: underline;
+    
+    }
+
+/* FOOTER */
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #FFFFFF; 
+    padding: 20px;
+   
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: flex-end;   
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin-left: 20px;        
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+}
