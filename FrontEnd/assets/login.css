@@ -106,6 +106,12 @@ nav li a:hover {
     gap: 20px;
 }
 
+#message-erreur {
+    color: red;       
+    font-size: 16px;  
+    margin: 25px;    
+}
+
 #login-section label {
     font-family: 'Work Sans';
     font-weight: 300;
