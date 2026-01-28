@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Sophie Bluel - Architecte d'intérieur</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
+		rel="stylesheet">
 	<meta name="description" content="">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/modale.css">
 </head>
+
 <body>
-<header>
-	<h1>Sophie Bluel <span>ARCHITECTE D'INTÉRIEUR</span></h1>
-	<nav>
-		<ul>
-			<li>projets</li>
-			<li>contact</li>
-			<li><a href="login.html" class="nav-login">login</a></li>
 
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
-</header>
-<main>
-	<section id="introduction">
-		<figure>
-			<img src="./assets/images/sophie-bluel.png" alt="">
-		</figure>
-		<article>
-			<h2>Designer d'espace</h2>
-			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
-			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
-			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
-		</article>
-	</section>
-	<section id="portfolio">
-		<h2>Mes Projets</h2>
+	<!-- bandeau noir -->
+	<div class="edit-banner">
+		<i class="fa-regular fa-pen-to-square"></i>
+		<span>Mode édition</span>
+	</div>
+
+	<!-- le site  -->
+	<div class="page-container">
+		<header>
+			<h1>Sophie Bluel <span>ARCHITECTE D'INTÉRIEUR</span></h1>
+			<nav>
+				<ul>
+					<li>projets</li>
+					<li>contact</li>
+					<li><a href="login.html" class="nav-login">login</a></li>
+
+					<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="introduction">
+				<figure>
+					<img src="./assets/images/sophie-bluel.png" alt="">
+				</figure>
+				<article>
+					<h2>Designer d'espace</h2>
+					<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la
+						livraison finale du chantier.</p>
+					<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et
+						les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le
+						suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.
+					</p>
+					<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG,
+						décorateur(trice)</p>
+				</article>
+			</section>
+			<section id="portfolio">
+				<h2>
+					Mes projets
+					<i class="fa-regular fa-pen-to-square"></i>
+					<!-- <span class="edit-mode">modifier</span> -->
+					<button class="edit-mode">modifier</button>
+
+				</h2>
 
 
-    <!-- LES 4 BOUTONS FILTRE -->
-    <div class="filter-buttons">
-     <!--    <button class="btn-filter active" data-category="0">Tous</button>
+
+				<!-- LES 4 BOUTONS FILTRE -->
+				<div class="filter-buttons">
+					<!--    <button class="btn-filter active" data-category="0">Tous</button>
         <button class="btn-filter " data-category="1">Objets</button>
         <button class="btn-filter " data-category="2">Appartements</button>
         <button class="btn-filter " data-category="3">Hotels & restaurents</button> -->
-    </div>
+				</div>
 
-    <!-- GALERIE -->
-    <div class="gallery">
-        <!-- les <figure> seront générés dynamiquement par filter.js -->
-        <!-- les anciennes photos peuvent rester en commentaire pour référence -->
-    </div>
-</section>
+				<!-- GALERIE -->
+				<div class="gallery">
+					<!-- les <figure> seront générés dynamiquement par filter.js -->
+					<!-- les anciennes photos peuvent rester en commentaire pour référence -->
+				</div>
+			</section>
 
 
 
-		<div class="gallery">
-			<!--<figure>
+			<div class="gallery">
+				<!--<figure>
 				<img src="assets/images/abajour-tahina.png" alt="Abajour Tahina">
 				<figcaption>Abajour Tahina</figcaption>
 			</figure>
@@ -101,32 +128,98 @@
 				<img src="assets/images/hotel-first-arte-new-delhi.png" alt="Hotel First Arte - New Delhi">
 				<figcaption>Hotel First Arte - New Delhi</figcaption>
 			</figure>-->
-		</div>
-	</section>
-	<section id="contact">
-		<h2>Contact</h2>
-		<p>Vous avez un projet ? Discutons-en !</p>
-		<form action="#" method="post">
-			<label for="name">Nom</label>
-			<input type="text" name="name" id="name">
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email">
-			<label for="message">Message</label>
-			<textarea name="message" id="message" cols="30" rows="10"></textarea>
-			<input type="submit" value="Envoyer">
-		</form>
-	</section>
-</main>
+			</div>
+			</section>
+			<section id="contact">
+				<h2>Contact</h2>
+				<p>Vous avez un projet ? Discutons-en !</p>
+				<form action="#" method="post">
+					<label for="name">Nom</label>
+					<input type="text" name="name" id="name">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<input type="submit" value="Envoyer">
+				</form>
+			</section>
+		</main>
 
-<footer>
-	<nav>
-		<ul>
-			<li>Mentions Légales</li>
-		</ul>
-	</nav>
-</footer>
-<script src="./assets/filter.js"></script>
-<script src="./assets/admin.js"></script>
+		<footer>
+			<nav>
+				<ul>
+					<li>Mentions Légales</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+
+
+
+	<!-- Overlay -->
+	<div class="overlay"></div>
+
+	<!-- Modale principale -->
+	<dialog class="modale">
+		<div class="modale-content">
+
+			<!-- Bouton fermer -->
+			<button class="close-modale">X</button>
+
+			<div class="galerie-wrapper">
+				<h3>Galerie photo</h3>
+				<div class="modale-gallery"></div>
+			</div>
+			<button class="add-photo-btn">Ajouter une photo</button>
+
+
+			<!-- AJOUT PHOTO -->
+
+			<div class="add-photo-content" style="display: none;">
+
+				<button class="arrow-left">
+					<img src="./assets/icons/arrow-left.svg" alt="Retour">
+				</button>
+
+				<h3>Ajout photo</h3>
+				<div class="cadre-ajout-photo">
+					<div class="mode-image">
+						<img src="./assets/icons/mode-image.svg" alt="Icône Photo">
+					</div>
+					<button class="bouton-ajouter-photo">+ Ajouter photo</button>
+					<p class="cadre-ajout-photo__info">jpg, png : 4mo max</p>
+				</div>
+
+				<!-- Champs titre et catégorie -->
+
+				<label for="titre">Titre</label>
+				<input type="text" id="titre" name="titre">
+
+				<label for="categorie">Catégorie</label>
+				<select id="categorie" name="categorie">
+
+					<option value=""></option>
+					<option value="1">Objets</option>
+					<option value="2">Appartements</option>
+					<option value="3">Hotels & restaurants</option>
+				</select>
+
+				<!-- Bouton valider -->
+				<button id="valider-projet">Valider</button>
+			</div>
+		</div>
+	</dialog>
+
+
+
+
+
+	<script src="./assets/filter.js"></script>
+	<script src="./assets/admin.js"></script>
+	<script src="./assets/modale.js"></script>
+	<script src="./assets/delete.js"></script>
+	<script src="./assets/add.js"></script>
 
 </body>
+
 </html>
