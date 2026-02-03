@@ -19,10 +19,10 @@ body {
     margin: auto;
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
-    background-color: #FFFEF8; /* Fond jaune clair pour login-page */
-    display: flex;      /* pour le footer */
-    flex-direction: column;  /* pour le footer*/
-    min-height: 100vh; /*  pour le footer*/
+    background-color: #FFFEF8; 
+    display: flex;     
+    flex-direction: column;  
+    min-height: 100vh; 
 }
 
 /* HEADER */
@@ -76,7 +76,7 @@ nav li a {
 }
 /* Login nav */
 .login-link {
-    font-weight: 600; /* Semi-bold */
+    font-weight: 600; 
 }
 
 /* NAV hover */
@@ -118,8 +118,8 @@ nav li a:hover {
     font-size: 14px;
     color: #000;
     align-self: flex-start;
-    margin-bottom: -15px;   /* espace entre les mots et les input */
-    margin-left: 10px;      /* décale légèrement le label à droite */
+    margin-bottom: -15px;   
+    margin-left: 10px;      
 }
 
 #login-section label + input {

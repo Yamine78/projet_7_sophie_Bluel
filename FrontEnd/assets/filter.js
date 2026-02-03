@@ -37,7 +37,7 @@ fetch('http://localhost:5678/api/works')
 
                 btnTous.addEventListener('click', () => {
                     gallery.innerHTML = ''; 
-                    projects.forEach(projet => afficherProjet(projet));// affiche tous les projets
+                    projects.forEach(projet => afficherProjet(projet));  // affiche tous les projets
                 });
 
                 //  les autres boutons des catégories

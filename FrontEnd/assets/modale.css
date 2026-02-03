@@ -38,6 +38,7 @@
     border-radius: 10px;
     border: none;
     padding: 20px;
+    overflow-y: auto;
 }
 
 
@@ -45,18 +46,19 @@
 .modale-gallery {
     min-width: 420px;
     box-sizing: border-box;
-    display: flex;
+
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0 auto;
     gap: 25px 10px;
-    /* vertical 5px | horizontal 10px */
+
     padding: 0;
     width: 80%;
     border-bottom: 1px solid #B3B3B3;
     padding-bottom: 50px;
     margin-bottom: 40px;
-  
+   display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 
@@ -175,7 +177,7 @@
 
 /* Cadre bleu */
 .cadre-ajout-photo {
-  margin-left: 90px;
+  margin-left: 130px;
  max-width: 420px;
   width: 100%;
   height: 169px;
@@ -196,19 +198,22 @@ width: auto;
        
 }
 
-/* Bouton + Ajouter photo */
-.bouton-ajouter-photo {
+/* Bouton dans cadre bleu */
+.add-photo-btn-2 {
+  display: block; 
   width: 40%;                  
   height: 20%;               
-  background: #306685;           
-  color: white;
+  background:  #CBD6DC;
+ ;           
+  color: #306685;
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;           
   font-size: 14px;
   line-height: 100%;
   text-align: center;
   border: none;
-  margin-top: 10px;              
+  margin-top: 10px;    
+  border-radius: 50px;          
   cursor: pointer;
 }
 
@@ -242,7 +247,7 @@ input[type="text"], input[type="file"], select {
   background: #FFFFFF;
 }
 
-/* Select wrapper avec chevron */
+/* le  wrapper avec chevron */
 .select-categorie-wrapper {
   position: relative;
   width: 420px;
@@ -259,14 +264,15 @@ input[type="text"], input[type="file"], select {
   color: #000;
 }
 
-/* Trait gris */
+/* le Trait gris */
 .trait-gris {
-  width: 420px;
+
+  width: auto;
   border: 1px solid #CCCCCC;
   margin: 25px auto;
 }
 
-/* Bouton Valider */
+/* le Bouton Valider */
 #valider-projet {
   width: 237px;
   height: 36px;
@@ -280,11 +286,11 @@ input[type="text"], input[type="file"], select {
 }
 
 #valider-projet.active {
-  background: #1D6154; /* vert quand actif */
+  background: #1D6154; /* bouton qui devient vert quand actif */
 }
 
 
-/* Image sélectionnée dans le cadre bleu */
+/* image en appercu dans le  cadre bleu */
 .cadre-ajout-photo img.preview {
     position: absolute;      
     top: 0;                  
