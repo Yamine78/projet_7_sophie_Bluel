@@ -141,10 +141,7 @@ header h1 span {
   width: 75vw;
   max-width: 630px;
   max-height: 90vh;
-  /* même que la galerie */
   height: 90%;
-  /* s’adapte au contenu */
-
 }
 
 

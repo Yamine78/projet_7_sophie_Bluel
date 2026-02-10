@@ -66,6 +66,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const file = inputFile.files[0];
     if (!file) return;
 
+  // Vérifier la taille de l'image 
+  if (file.size > 4 * 1024 * 1024) { // mes  4 Mo max 
+    alert("L'image est trop lourde, max 4 Mo.");
+    inputFile.value = "";    // me réinitialiser le champ 
+    const preview = cadrePhoto.querySelector("img.preview");
+    if (preview) preview.remove();
+    checkFormValidity();
+    return;
+  }
+
+
     let preview = cadrePhoto.querySelector("img.preview");
     if (!preview) {
       preview = document.createElement("img");
