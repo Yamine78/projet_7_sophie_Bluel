@@ -125,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => console.error(err));
   });
 
+
   // Télécharger la galerie modale 
   function telechargerGalerieModale() {
     fetch("http://localhost:5678/api/works")
